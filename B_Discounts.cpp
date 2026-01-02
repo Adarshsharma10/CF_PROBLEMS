@@ -1,52 +1,49 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
+
+#define ll long long
+#define all(v) (v).begin(), (v).end()
+
+void solve() {
+    int n,k;
+    cin >>n>>k;
+    vector<ll> a(n);
+    vector<ll> b(k);
+    for(auto &x:a) cin>>x;
+    for(auto &x:b) cin>>x;
+    sort(a.begin(),a.end(),greater<ll>());
+    sort(b.begin(),b.end());
+    
+    ll min_cost = 0;
+    int i=0,j=0;
+    while(i<n && j<k){
+        int x = b[j];
+        while(i<n && x>1){
+            min_cost+=a[i];
+            i++;
+            x--;
+        }
+        i++,j++;
+    }
+    while(i<n){
+        min_cost+=a[i];
+        i++;
+    }
+    cout<<min_cost<<endl;
+   
+}
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+
     int t;
-    if (!(cin >> t)) return 0;
+    cin >> t;
     while (t--) {
-        int n, k;
-        cin >> n >> k;
-        vector<ll> a(n);
-        for (int i = 0; i < n; ++i) cin >> a[i];
-        vector<int> b(k);
-        for (int i = 0; i < k; ++i) cin >> b[i];
-
-        sort(a.begin(), a.end());            // ascending prices
-        sort(b.begin(), b.end());            // ascending voucher sizes
-
-        ll total = 0;
-        for (ll x : a) total += x;
-
-        ll freebies = 0;
-        int L = 0;             // index of smallest not-yet-used
-        int R = n - 1;         // index of largest not-yet-used
-
-        for (int x : b) {
-            if (R < L) break;  // no items left
-            if (x == 1) {
-                // free the largest remaining item
-                freebies += a[R];
-                --R;
-            } else {
-                // free the smallest remaining item, consume (x-1) largest
-                if (R - L + 1 < x) {
-                    // not enough items left to use this voucher, skip
-                    continue;
-                }
-                freebies += a[L];
-                ++L;
-                R -= (x - 1);
-            }
-        }
-
-        cout << (total - freebies) << '\n';
+        solve();
     }
+
     return 0;
 }
 
-
-// Pending
+// Successfully submitted
