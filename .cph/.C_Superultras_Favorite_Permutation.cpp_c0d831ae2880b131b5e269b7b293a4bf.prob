@@ -1,0 +1,1 @@
+{"name":"Local: C_Superultras_Favorite_Permutation","url":"d:\\CF_PROBLEMS\\C_Superultras_Favorite_Permutation.cpp","tests":[{"id":1767614836717,"input":"1\n8","output":"1 3 5 7 2 4 6 8 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CF_PROBLEMS\\C_Superultras_Favorite_Permutation.cpp","group":"local","local":true}
