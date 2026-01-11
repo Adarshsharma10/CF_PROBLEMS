@@ -7,7 +7,7 @@ using namespace std;
 void solve() {
     int n;
     cin >> n;
-    // logic here
+    
 }
 
 int main() {
