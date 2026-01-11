@@ -7,6 +7,23 @@ using namespace std;
 void solve() {
     int n,a,b;
     cin >> n >> a >> b;
+    int maxi = max(a,b);
+    if(maxi==a){
+        if((n-a)%2==0 && (a-b)%2==0){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+    else{
+        if((n-b)%2==0){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
    
 }
 
@@ -23,4 +40,4 @@ int main() {
     return 0;
 }
 
-// Pending
+// Successfulyy submitted
