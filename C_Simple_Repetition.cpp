@@ -51,7 +51,4 @@ void solve() {
         return 0;
     }
     
-
-
-
-    
+// Successfully Submitted
