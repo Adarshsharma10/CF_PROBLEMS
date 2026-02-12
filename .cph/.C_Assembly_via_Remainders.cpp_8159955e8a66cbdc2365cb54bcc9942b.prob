@@ -1,0 +1,1 @@
+{"name":"Local: C_Assembly_via_Remainders","url":"d:\\CF_PROBLEMS\\C_Assembly_via_Remainders.cpp","tests":[{"id":1770902281203,"input":"1\n4\n2 4 1","output":""},{"id":1770903341206,"input":"1\n3\n1 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CF_PROBLEMS\\C_Assembly_via_Remainders.cpp","group":"local","local":true}
