@@ -1,0 +1,1 @@
+{"name":"Local: C_Even_Positions","url":"d:\\CF_PROBLEMS\\C_Even_Positions.cpp","tests":[{"id":1771519093685,"input":"4\n6\n_(_)_)\n2\n_)\n8\n_)_)_)_)\n8\n_(_)_(_)\n","output":"5\n1\n4\n8\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CF_PROBLEMS\\C_Even_Positions.cpp","group":"local","local":true}
