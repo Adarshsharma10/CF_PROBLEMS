@@ -1,0 +1,1 @@
+{"name":"Local: A_Deletive_Editing","url":"d:\\CF_PROBLEMS\\A_Deletive_Editing.cpp","tests":[{"id":1775838632512,"input":"4\nb\naabbbabaa\nabbb\nabbaab\n","output":"b\naabbbabaa\nbbbb\nabbaaa"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CF_PROBLEMS\\A_Deletive_Editing.cpp","group":"local","local":true}
